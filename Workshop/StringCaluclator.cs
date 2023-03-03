@@ -11,7 +11,7 @@ namespace Workshop
         public static int Calculate(string str)
         {
             if (string.IsNullOrEmpty(str))
-                return 0;
+                return 10000000;
 
             char? customSeparator = str.StartsWith("//") && str[3] == '\n' ? str[2] : null;
 
